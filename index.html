@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Storage Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Browser Storage Manager</h1>
+      <div class="tabs">
+        <button class="tab-btn" data-tab="local">Local Storage</button>
+        <button class="tab-btn" data-tab="session">Session Storage</button>
+        <button class="tab-btn" data-tab="indexeddb">IndexedDB</button>
+        <button class="tab-btn" data-tab="websql">Web SQL</button>
+      </div>
+      <div class="content">
+        <div id="local" class="tab-content hidden">
+          <h2>Local Storage</h2>
+          <ul id="local-list"></ul>
+          <input id="local-key" placeholder="Key" />
+          <input id="local-value" placeholder="Value" />
+          <button id="add-local">Add</button>
+        </div>
+        <div id="session" class="tab-content hidden">
+          <h2>Session Storage</h2>
+          <ul id="session-list"></ul>
+          <input id="session-key" placeholder="Key" />
+          <input id="session-value" placeholder="Value" />
+          <button id="add-session">Add</button>
+        </div>
+        <div id="indexeddb" class="tab-content hidden">
+          <h2>IndexedDB</h2>
+          <ul id="indexeddb-list"></ul>
+          <input id="indexeddb-key" placeholder="Key" />
+          <input id="indexeddb-value" placeholder="Value" />
+          <button id="add-indexeddb">Add</button>
+        </div>
+        <div id="websql" class="tab-content hidden">
+          <h2>Web SQL</h2>
+          <ul id="websql-list"></ul>
+          <input id="websql-key" placeholder="Key" />
+          <input id="websql-value" placeholder="Value" />
+          <button id="add-websql">Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
