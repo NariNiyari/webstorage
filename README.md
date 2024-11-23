@@ -1,2 +1,2 @@
-# webstorage.github.io
+# webstorage
 local storage
